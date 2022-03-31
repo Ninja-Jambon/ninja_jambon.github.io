@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie t'as peur</title>
+    <title>Bomber</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
-    <form>
-        <input type="text" id="text">
-        <input type="button" value="Publier" onclick="addmessage()">
-    </form>
-    <h1>Messages :</h1>
-    <p id="messages"></p>
+<body onload="start()" onkeydown="keyDown(event)">
+    <header>
+        <h1>Mon Super Bomber 2022</h1>
+    </header>
+    <main>
+        <canvas width="800" height="800" onclick="mouseClick(event)" id="myCanvas"></canvas>
+    </main>
+    <footer>
+        <p>Jeu fait en cours de NSI en terminale</p>
+    </footer>
 </body>
 </html>
